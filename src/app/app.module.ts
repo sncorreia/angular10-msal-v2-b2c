@@ -39,7 +39,7 @@ export function MSALInstanceFactory(): IPublicClientApplication {
     system: {
       loggerOptions: {
         loggerCallback,
-        logLevel: LogLevel.Info,
+        logLevel: LogLevel.Verbose,
         piiLoggingEnabled: false
       }
     }
@@ -64,6 +64,7 @@ export function MSALGuardConfigFactory(): MsalGuardConfiguration {
     },
   };
 }
+
 
 @NgModule({
   declarations: [
