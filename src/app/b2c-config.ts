@@ -5,22 +5,22 @@
  */
 export const b2cPolicies = {
     names: {
-        signUpSignIn: "b2c_1_susi",
-        forgotPassword: "b2c_1_reset",
-        editProfile: "b2c_1_edit_profile"
+        signUpSignIn: "B2C_1_susi_20210403",
+        forgotPassword: "B2C_1_reset_20210403",
+        editProfile: "B2C_1_profile_20210403"
     },
     authorities: {
         signUpSignIn: {
-            authority: "https://fabrikamb2c.b2clogin.com/fabrikamb2c.onmicrosoft.com/b2c_1_susi",
+            authority: "https://secorreb2c.b2clogin.com/secorreb2c.onmicrosoft.com/B2C_1_susi_20210403",
         },
         forgotPassword: {
-            authority: "https://fabrikamb2c.b2clogin.com/fabrikamb2c.onmicrosoft.com/b2c_1_reset",
+            authority: "https://secorreb2c.b2clogin.com/secorreb2c.onmicrosoft.com/B2C_1_reset_20210403",
         },
         editProfile: {
-            authority: "https://fabrikamb2c.b2clogin.com/fabrikamb2c.onmicrosoft.com/b2c_1_edit_profile"
+            authority: "https://secorreb2c.b2clogin.com/secorreb2c.onmicrosoft.com/B2C_1_profile_20210403"
         }
     },
-    authorityDomain: "fabrikamb2c.b2clogin.com"
+    authorityDomain: "secorreb2c.b2clogin.com"
 };
 
 /**
@@ -28,6 +28,6 @@ export const b2cPolicies = {
  * The current application coordinates were pre-registered in a B2C tenant.
  */
 export const apiConfig: { scopes: string[]; uri: string } = {
-    scopes: ['https://fabrikamb2c.onmicrosoft.com/helloapi/demo.read'],
-    uri: 'https://fabrikamb2chello.azurewebsites.net/hello'
+    scopes: ['https://secorreB2C.onmicrosoft.com/c9cf083c-bc42-4979-a76b-df8bb063bd05/user_impersonation'],
+    uri: '<Add the API URL>'
 };
